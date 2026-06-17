@@ -19,17 +19,17 @@ git submodule update --init --recursive
 
 ## Repositories
 
-| Path | GitHub repo | Description |
-|------|-------------|-------------|
-| `projects/tools/image-tools/` | [image-tools](https://github.com/openlearnia/image-tools) | Browser image utilities (image.openlearnia.com) |
-| `projects/tools/json-toolkit/` | [json-toolkit](https://github.com/openlearnia/json-toolkit) | Format, validate, and minify JSON in the browser |
-| `projects/tools/image-metadata-viewer/` | [image-metadata-viewer](https://github.com/openlearnia/image-metadata-viewer) | Inspect image metadata and EXIF locally |
-| `projects/tools/password-strength-lab/` | [password-strength-lab](https://github.com/openlearnia/password-strength-lab) | Password strength analysis and generator |
-| `projects/tools/livewallpaper/` | [live-wallpaper](https://github.com/openlearnia/live-wallpaper) | Windows live wallpaper engine |
-| `projects/tools/markdown-editor/` | [markdown-editor](https://github.com/openlearnia/markdown-editor) | Browser Markdown workspace (OPFS) |
-| `projects/tools/pglite-playground/` | [pglite-playground](https://github.com/openlearnia/pglite-playground) | Interactive PGLite SQL playground |
-| `projects/tools/schema-builder/` | [schema-builder](https://github.com/openlearnia/schema-builder) | Visual database schema builder |
-| `website/` | [website](https://github.com/openlearnia/website) | Marketing site (Astro) |
+| Path | GitHub repo | Live | Description |
+|------|-------------|------|-------------|
+| `projects/tools/image-tools/` | [image-tools](https://github.com/openlearnia/image-tools) | [image-tools.openlearnia.com](https://image-tools.openlearnia.com) | Browser image utilities |
+| `projects/tools/json-toolkit/` | [json-toolkit](https://github.com/openlearnia/json-toolkit) | [json-toolkit.openlearnia.com](https://json-toolkit.openlearnia.com) | Format, validate, and minify JSON in the browser |
+| `projects/tools/image-metadata-viewer/` | [image-metadata-viewer](https://github.com/openlearnia/image-metadata-viewer) | [image-metadata-viewer.openlearnia.com](https://image-metadata-viewer.openlearnia.com) | Inspect image metadata and EXIF locally |
+| `projects/tools/password-strength-lab/` | [password-strength-lab](https://github.com/openlearnia/password-strength-lab) | [password-strength-lab.openlearnia.com](https://password-strength-lab.openlearnia.com) | Password strength analysis and generator |
+| `projects/tools/livewallpaper/` | [live-wallpaper](https://github.com/openlearnia/live-wallpaper) | [Releases](https://github.com/openlearnia/live-wallpaper/releases) | Windows live wallpaper engine |
+| `projects/tools/markdown-editor/` | [markdown-editor](https://github.com/openlearnia/markdown-editor) | [markdown-editor.openlearnia.com](https://markdown-editor.openlearnia.com) | Browser Markdown workspace (OPFS) |
+| `projects/tools/pglite-playground/` | [pglite-playground](https://github.com/openlearnia/pglite-playground) | [pglite-playground.openlearnia.com](https://pglite-playground.openlearnia.com) | Interactive PGLite SQL playground |
+| `projects/tools/schema-builder/` | [schema-builder](https://github.com/openlearnia/schema-builder) | [schema-builder.openlearnia.com](https://schema-builder.openlearnia.com) | Visual database schema builder |
+| `website/` | [website](https://github.com/openlearnia/website) | [openlearnia.com](https://openlearnia.com) | Marketing site (Astro) |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for day-to-day workflow (branch, commit, bump submodule SHAs).
 
