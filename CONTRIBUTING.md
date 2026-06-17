@@ -28,7 +28,6 @@ git submodule update --init --recursive
 | `projects/tools/password-strength-lab/` | [openlearnia/password-strength-lab](https://github.com/openlearnia/password-strength-lab) |
 | `projects/tools/livewallpaper/` | [openlearnia/live-wallpaper](https://github.com/openlearnia/live-wallpaper) |
 | `projects/tools/markdown-editor/` | [openlearnia/markdown-editor](https://github.com/openlearnia/markdown-editor) |
-| `projects/tools/pglite-playground/` | [openlearnia/pglite-playground](https://github.com/openlearnia/pglite-playground) |
 | `projects/tools/schema-builder/` | [openlearnia/schema-builder](https://github.com/openlearnia/schema-builder) |
 | `website/` | [openlearnia/website](https://github.com/openlearnia/website) |
 
@@ -143,7 +142,7 @@ npm run dev
 
 Open a PR against [openlearnia/password-strength-lab](https://github.com/openlearnia/password-strength-lab).
 
-### Schema Builder
+### Database Lab (schema-builder)
 
 ```powershell
 cd projects/tools/schema-builder
@@ -153,15 +152,7 @@ npm run dev
 
 Open a PR against [openlearnia/schema-builder](https://github.com/openlearnia/schema-builder).
 
-### PGLite Playground
-
-```powershell
-cd projects/tools/pglite-playground
-npm install
-npm run dev
-```
-
-Open a PR against [openlearnia/pglite-playground](https://github.com/openlearnia/pglite-playground).
+The former `pglite-playground` tool is merged into this project; see `projects/tools/pglite-playground/README.md`.
 
 ### Website
 

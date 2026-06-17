@@ -27,8 +27,7 @@ git submodule update --init --recursive
 | `projects/tools/password-strength-lab/` | [password-strength-lab](https://github.com/openlearnia/password-strength-lab) | [password-strength-lab.openlearnia.com](https://password-strength-lab.openlearnia.com) | Password strength analysis and generator |
 | `projects/tools/livewallpaper/` | [live-wallpaper](https://github.com/openlearnia/live-wallpaper) | [Releases](https://github.com/openlearnia/live-wallpaper/releases) | Windows live wallpaper engine |
 | `projects/tools/markdown-editor/` | [markdown-editor](https://github.com/openlearnia/markdown-editor) | [markdown-editor.openlearnia.com](https://markdown-editor.openlearnia.com) | Browser Markdown workspace (OPFS) |
-| `projects/tools/pglite-playground/` | [pglite-playground](https://github.com/openlearnia/pglite-playground) | [pglite-playground.openlearnia.com](https://pglite-playground.openlearnia.com) | Interactive PGLite SQL playground |
-| `projects/tools/schema-builder/` | [schema-builder](https://github.com/openlearnia/schema-builder) | [schema-builder.openlearnia.com](https://schema-builder.openlearnia.com) | Visual database schema builder |
+| `projects/tools/schema-builder/` | [schema-builder](https://github.com/openlearnia/schema-builder) | [schema-builder.openlearnia.com](https://schema-builder.openlearnia.com) | Database Lab — visual schema builder + PGLite |
 | `website/` | [website](https://github.com/openlearnia/website) | [openlearnia.com](https://openlearnia.com) | Marketing site (Astro) |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for day-to-day workflow (branch, commit, bump submodule SHAs).
@@ -89,7 +88,7 @@ npm install
 npm run dev
 ```
 
-## Schema Builder (quick start)
+## Database Lab (quick start)
 
 ```powershell
 cd projects/tools/schema-builder
@@ -97,13 +96,7 @@ npm install
 npm run dev
 ```
 
-## PGLite Playground (quick start)
-
-```powershell
-cd projects/tools/pglite-playground
-npm install
-npm run dev
-```
+Formerly split across `schema-builder` and `pglite-playground`; both are now unified in `schema-builder`.
 
 ## License
 
