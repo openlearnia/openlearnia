@@ -23,8 +23,13 @@ git submodule update --init --recursive
 | Path | Remote repo |
 |------|-------------|
 | `projects/tools/image-tools/` | [openlearnia/image-tools](https://github.com/openlearnia/image-tools) |
+| `projects/tools/json-toolkit/` | [openlearnia/json-toolkit](https://github.com/openlearnia/json-toolkit) |
+| `projects/tools/image-metadata-viewer/` | [openlearnia/image-metadata-viewer](https://github.com/openlearnia/image-metadata-viewer) |
+| `projects/tools/password-strength-lab/` | [openlearnia/password-strength-lab](https://github.com/openlearnia/password-strength-lab) |
 | `projects/tools/livewallpaper/` | [openlearnia/live-wallpaper](https://github.com/openlearnia/live-wallpaper) |
 | `projects/tools/markdown-editor/` | [openlearnia/markdown-editor](https://github.com/openlearnia/markdown-editor) |
+| `projects/tools/pglite-playground/` | [openlearnia/pglite-playground](https://github.com/openlearnia/pglite-playground) |
+| `projects/tools/schema-builder/` | [openlearnia/schema-builder](https://github.com/openlearnia/schema-builder) |
 | `website/` | [openlearnia/website](https://github.com/openlearnia/website) |
 
 Submodules checkout a **detached HEAD** at the commit pinned by the umbrella. Before starting work, check out a branch inside the submodule:
@@ -84,6 +89,56 @@ bun run dev
 ```
 
 Open a PR against [openlearnia/markdown-editor](https://github.com/openlearnia/markdown-editor).
+
+### JSON Toolkit
+
+```powershell
+cd projects/tools/json-toolkit
+npm install
+npm run dev
+```
+
+Open a PR against [openlearnia/json-toolkit](https://github.com/openlearnia/json-toolkit).
+
+### Image Metadata Viewer
+
+```powershell
+cd projects/tools/image-metadata-viewer
+npm install
+npm run dev
+```
+
+Open a PR against [openlearnia/image-metadata-viewer](https://github.com/openlearnia/image-metadata-viewer).
+
+### Password Strength Lab
+
+```powershell
+cd projects/tools/password-strength-lab
+npm install
+npm run dev
+```
+
+Open a PR against [openlearnia/password-strength-lab](https://github.com/openlearnia/password-strength-lab).
+
+### Schema Builder
+
+```powershell
+cd projects/tools/schema-builder
+npm install
+npm run dev
+```
+
+Open a PR against [openlearnia/schema-builder](https://github.com/openlearnia/schema-builder).
+
+### PGLite Playground
+
+```powershell
+cd projects/tools/pglite-playground
+npm install
+npm run dev
+```
+
+Open a PR against [openlearnia/pglite-playground](https://github.com/openlearnia/pglite-playground).
 
 ### Website
 

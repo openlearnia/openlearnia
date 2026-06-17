@@ -22,8 +22,13 @@ git submodule update --init --recursive
 | Path | GitHub repo | Description |
 |------|-------------|-------------|
 | `projects/tools/image-tools/` | [image-tools](https://github.com/openlearnia/image-tools) | Browser image utilities (image.openlearnia.com) |
+| `projects/tools/json-toolkit/` | [json-toolkit](https://github.com/openlearnia/json-toolkit) | Format, validate, and minify JSON in the browser |
+| `projects/tools/image-metadata-viewer/` | [image-metadata-viewer](https://github.com/openlearnia/image-metadata-viewer) | Inspect image metadata and EXIF locally |
+| `projects/tools/password-strength-lab/` | [password-strength-lab](https://github.com/openlearnia/password-strength-lab) | Password strength analysis and generator |
 | `projects/tools/livewallpaper/` | [live-wallpaper](https://github.com/openlearnia/live-wallpaper) | Windows live wallpaper engine |
 | `projects/tools/markdown-editor/` | [markdown-editor](https://github.com/openlearnia/markdown-editor) | Browser Markdown workspace (OPFS) |
+| `projects/tools/pglite-playground/` | [pglite-playground](https://github.com/openlearnia/pglite-playground) | Interactive PGLite SQL playground |
+| `projects/tools/schema-builder/` | [schema-builder](https://github.com/openlearnia/schema-builder) | Visual database schema builder |
 | `website/` | [website](https://github.com/openlearnia/website) | Marketing site (Astro) |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for day-to-day workflow (branch, commit, bump submodule SHAs).
@@ -58,6 +63,46 @@ npm run dev
 cd projects/tools/markdown-editor
 bun install
 bun run dev
+```
+
+## JSON Toolkit (quick start)
+
+```powershell
+cd projects/tools/json-toolkit
+npm install
+npm run dev
+```
+
+## Image Metadata Viewer (quick start)
+
+```powershell
+cd projects/tools/image-metadata-viewer
+npm install
+npm run dev
+```
+
+## Password Strength Lab (quick start)
+
+```powershell
+cd projects/tools/password-strength-lab
+npm install
+npm run dev
+```
+
+## Schema Builder (quick start)
+
+```powershell
+cd projects/tools/schema-builder
+npm install
+npm run dev
+```
+
+## PGLite Playground (quick start)
+
+```powershell
+cd projects/tools/pglite-playground
+npm install
+npm run dev
 ```
 
 ## License

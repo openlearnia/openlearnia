@@ -10,3 +10,18 @@
 [submodule "projects/tools/livewallpaper"]
 	path = projects/tools/livewallpaper
 	url = https://github.com/openlearnia/live-wallpaper.git
+[submodule "projects/tools/schema-builder"]
+	path = projects/tools/schema-builder
+	url = https://github.com/openlearnia/schema-builder.git
+[submodule "projects/tools/pglite-playground"]
+	path = projects/tools/pglite-playground
+	url = https://github.com/openlearnia/pglite-playground.git
+[submodule "projects/tools/json-toolkit"]
+	path = projects/tools/json-toolkit
+	url = https://github.com/openlearnia/json-toolkit.git
+[submodule "projects/tools/image-metadata-viewer"]
+	path = projects/tools/image-metadata-viewer
+	url = https://github.com/openlearnia/image-metadata-viewer.git
+[submodule "projects/tools/password-strength-lab"]
+	path = projects/tools/password-strength-lab
+	url = https://github.com/openlearnia/password-strength-lab.git
