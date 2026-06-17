@@ -1,0 +1,21 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/.vs/
+**/*.user
+**/*.suo
+**/publish/
+**/dist/
+**/TestResults/
+
+# IDE / local
+.cursor/
+node_modules/
+website/dist/
+**/*.log
+
+# Staging / obsolete helpers (not tracked in umbrella)
+.push-staging/
+live-wallpaper-ci/
+live-wallpaper-README.md
+.github-profile/

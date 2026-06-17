@@ -1,0 +1,12 @@
+[submodule "projects/tools/image-tools"]
+	path = projects/tools/image-tools
+	url = https://github.com/openlearnia/image-tools.git
+[submodule "projects/tools/markdown-editor"]
+	path = projects/tools/markdown-editor
+	url = https://github.com/openlearnia/markdown-editor.git
+[submodule "website"]
+	path = website
+	url = https://github.com/openlearnia/website.git
+[submodule "projects/tools/livewallpaper"]
+	path = projects/tools/livewallpaper
+	url = https://github.com/openlearnia/live-wallpaper.git
