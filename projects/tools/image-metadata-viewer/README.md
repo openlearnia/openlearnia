@@ -24,6 +24,12 @@ Open the local Vite URL shown in the terminal.
 npm run build
 ```
 
+## CI/CD
+
+Pushes to `main` that touch this tool (or its workflow file) deploy `dist/` to Cloudflare Pages via GitHub Actions (`.github/workflows/deploy-image-metadata-viewer.yml`). You can also run the workflow manually from the Actions tab.
+
+Required repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CF_PAGES_IMAGE_METADATA_VIEWER`.
+
 ## Notes
 
 - Metadata parsing is fully local in-browser.

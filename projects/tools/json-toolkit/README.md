@@ -28,3 +28,9 @@ npm run preview
 ```
 
 `npm run build` outputs production files to `dist/`.
+
+## CI/CD
+
+Pushes to `main` that touch this tool (or its workflow file) deploy `dist/` to Cloudflare Pages via GitHub Actions (`.github/workflows/deploy-json-toolkit.yml`). You can also run the workflow manually from the Actions tab.
+
+Required repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CF_PAGES_JSON_TOOLKIT`.

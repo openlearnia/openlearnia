@@ -33,6 +33,12 @@ Open the local URL shown by Vite.
 npm run build
 ```
 
+## CI/CD
+
+Pushes to `main` that touch this tool (or its workflow file) deploy `dist/` to Cloudflare Pages via GitHub Actions (`.github/workflows/deploy-password-strength-lab.yml`). You can also run the workflow manually from the Actions tab.
+
+Required repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CF_PAGES_PASSWORD_STRENGTH_LAB`.
+
 ## Notes
 
 - All analysis runs in the browser.
