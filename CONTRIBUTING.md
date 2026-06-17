@@ -58,6 +58,29 @@ git push origin main
 
 On another machine: `git pull --recurse-submodules` to get the same submodule SHAs.
 
+## Local development
+
+### Windows PowerShell
+
+If `npm run build` fails with a script execution policy error, use the `.cmd` shim:
+
+```powershell
+npm.cmd install
+npm.cmd run build
+```
+
+Bun-based projects (`image-tools`, `markdown-editor`) use `bun install` and `bun run build` as usual.
+
+### Vite + React toolchain
+
+Browser tools built with Vite share one toolchain (aligned with `markdown-editor`):
+
+- TypeScript `~6.0.2` (required for `erasableSyntaxOnly` in tsconfig)
+- Vite `^8.x` and Vitest `^4.x` at the **same** major versions (avoids `vite.config.ts` type conflicts)
+- `npm ci` + committed `package-lock.json` in CI
+
+Astro apps (`image-tools`, `website`) use `bun` or `npm` per project README.
+
 ## Per-project quick starts
 
 ### Live Wallpaper
