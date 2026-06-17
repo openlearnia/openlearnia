@@ -150,6 +150,12 @@ npm run build
 
 Open a PR against [openlearnia/website](https://github.com/openlearnia/website).
 
+## Cloudflare Pages deploy
+
+All browser/web submodules use `wrangler.toml` at repo root and deploy via GitHub Actions with org secrets `CF_API_TOKEN` and `CF_ACCOUNT_ID`. Create a matching Pages project name in Cloudflare for each tool (see each repo's `wrangler.toml` `name` field).
+
+**Exception:** `live-wallpaper` is a Windows desktop app — it uses `build.yml` + `release.yml` (GitHub Releases), not Cloudflare Pages.
+
 ## Code of conduct
 
 See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
