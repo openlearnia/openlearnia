@@ -20,3 +20,7 @@ website/dist/
 live-wallpaper-ci/
 live-wallpaper-README.md
 .github-profile/
+
+# macOS
+.DS_Store
+**/.DS_Store
