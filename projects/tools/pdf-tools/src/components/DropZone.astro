@@ -1,0 +1,24 @@
+---
+interface Props {
+  id?: string;
+  multiple?: boolean;
+  label?: string;
+  accept?: string;
+  hint?: string;
+}
+
+const {
+  id = 'drop-zone',
+  multiple = false,
+  label = 'Drop a PDF here or click to browse',
+  accept = 'application/pdf,.pdf',
+  hint = 'PDF only — max 50 MB, 200 pages',
+} = Astro.props;
+---
+
+<div class="drop-zone" id={id} data-dropzone>
+  <input type="file" id={`${id}-input`} accept={accept} multiple={multiple} />
+  <p>{label}</p>
+  <p class="stats" style="margin:0.5rem 0 0">{hint}</p>
+</div>
+<p class="error" id={`${id}-error`} hidden></p>

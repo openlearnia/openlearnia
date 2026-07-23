@@ -1,0 +1,32 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import ToolShell from '../components/ToolShell.astro';
+import DropZone from '../components/DropZone.astro';
+import PageThumbGrid from '../components/PageThumbGrid.astro';
+---
+<AppLayout
+  title="Rotate PDF — Openlearnia PDF Tools"
+  description="Rotate all pages 90°, 180°, or 270° — entirely in your browser."
+  activeSlug="rotate"
+>
+  <ToolShell title="Rotate PDF" description="Rotate all pages clockwise by 90°, 180°, or 270°." slug="rotate">
+    <DropZone label="Drop a PDF here or click to browse" />
+    <p class="stats" id="file-hint">Choose a PDF to rotate</p>
+    <div class="controls">
+      <label>
+        Rotation
+        <select id="degrees">
+          <option value="90">90° clockwise</option>
+          <option value="180">180°</option>
+          <option value="270">270° clockwise</option>
+        </select>
+      </label>
+    </div>
+    <PageThumbGrid id="thumb-grid" />
+    <button id="download-btn" data-label="Download rotated.pdf" disabled>Download rotated.pdf</button>
+  </ToolShell>
+</AppLayout>
+<script>
+  import { initRotate } from '../scripts/rotate';
+  initRotate();
+</script>

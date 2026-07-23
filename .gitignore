@@ -24,3 +24,6 @@ live-wallpaper-README.md
 # macOS
 .DS_Store
 **/.DS_Store
+
+.tmp
+.audit-screenshots

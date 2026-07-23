@@ -1,0 +1,23 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import ToolShell from '../components/ToolShell.astro';
+import DropZone from '../components/DropZone.astro';
+import PageThumbGrid from '../components/PageThumbGrid.astro';
+---
+<AppLayout
+  title="Delete PDF pages — Openlearnia PDF Tools"
+  description="Remove selected pages from a PDF — entirely in your browser."
+  activeSlug="delete"
+>
+  <ToolShell title="Delete pages" description="Click pages to mark them for removal, then download the rest." slug="delete">
+    <DropZone label="Drop a PDF here or click to browse" />
+    <p class="stats" id="file-hint">Choose a PDF</p>
+    <p class="stats" id="selection-hint"></p>
+    <PageThumbGrid id="thumb-grid" />
+    <button id="download-btn" data-label="Download PDF" disabled>Download PDF</button>
+  </ToolShell>
+</AppLayout>
+<script>
+  import { initDelete } from '../scripts/delete';
+  initDelete();
+</script>

@@ -1,0 +1,46 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import ToolShell from '../components/ToolShell.astro';
+import DropZone from '../components/DropZone.astro';
+import PageThumbGrid from '../components/PageThumbGrid.astro';
+---
+<AppLayout
+  title="Watermark PDF — Openlearnia PDF Tools"
+  description="Add a text watermark to every page — entirely in your browser."
+  activeSlug="watermark"
+>
+  <ToolShell title="Text watermark" description="Stamp text across every page with opacity and position." slug="watermark">
+    <DropZone label="Drop a PDF here or click to browse" />
+    <p class="stats" id="file-hint">Choose a PDF</p>
+    <div class="controls">
+      <label>
+        Text
+        <input type="text" id="wm-text" value="CONFIDENTIAL" maxlength="80" />
+      </label>
+      <label>
+        Opacity
+        <input type="range" id="wm-opacity" min="0.1" max="0.8" step="0.05" value="0.35" />
+      </label>
+      <label>
+        Size
+        <input type="number" id="wm-size" min="12" max="96" value="48" />
+      </label>
+      <label>
+        Position
+        <select id="wm-position">
+          <option value="center">Center</option>
+          <option value="top-left">Top left</option>
+          <option value="top-right">Top right</option>
+          <option value="bottom-left">Bottom left</option>
+          <option value="bottom-right">Bottom right</option>
+        </select>
+      </label>
+    </div>
+    <PageThumbGrid id="thumb-grid" />
+    <button id="download-btn" data-label="Download watermarked.pdf" disabled>Download watermarked.pdf</button>
+  </ToolShell>
+</AppLayout>
+<script>
+  import { initWatermark } from '../scripts/watermark';
+  initWatermark();
+</script>

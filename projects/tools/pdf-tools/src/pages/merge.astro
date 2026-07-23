@@ -1,0 +1,23 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import ToolShell from '../components/ToolShell.astro';
+import DropZone from '../components/DropZone.astro';
+import PageThumbGrid from '../components/PageThumbGrid.astro';
+---
+<AppLayout
+  title="Merge PDFs — Openlearnia PDF Tools"
+  description="Combine multiple PDFs into one file, in order — entirely in your browser."
+  activeSlug="merge"
+>
+  <ToolShell title="Merge PDFs" description="Combine multiple PDFs into one file, in order." slug="merge">
+    <DropZone multiple label="Drop multiple PDFs here or click to browse" />
+    <p class="stats" id="file-hint">Select at least 2 PDFs</p>
+    <ul class="file-list" id="file-list"></ul>
+    <PageThumbGrid id="thumb-grid" />
+    <button id="download-btn" data-label="Download merged.pdf" disabled>Download merged.pdf</button>
+  </ToolShell>
+</AppLayout>
+<script>
+  import { initMerge } from '../scripts/merge';
+  initMerge();
+</script>

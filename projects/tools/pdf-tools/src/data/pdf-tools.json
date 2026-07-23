@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "merge",
+    "name": "Merge",
+    "category": "Combine",
+    "description": "Combine multiple PDFs into one file, in order."
+  },
+  {
+    "slug": "split",
+    "name": "Split",
+    "category": "Extract",
+    "description": "Extract a page range into a new PDF."
+  },
+  {
+    "slug": "delete",
+    "name": "Delete pages",
+    "category": "Edit",
+    "description": "Remove selected pages and download the rest."
+  },
+  {
+    "slug": "reorder",
+    "name": "Reorder",
+    "category": "Edit",
+    "description": "Change page order with thumbnails and up/down controls."
+  },
+  {
+    "slug": "rotate",
+    "name": "Rotate",
+    "category": "Edit",
+    "description": "Rotate pages 90°, 180°, or 270°."
+  },
+  {
+    "slug": "watermark",
+    "name": "Watermark",
+    "category": "Edit",
+    "description": "Stamp text across every page with opacity and position."
+  },
+  {
+    "slug": "images-to-pdf",
+    "name": "Images → PDF",
+    "category": "Convert",
+    "description": "Turn JPEG/PNG (and friends) into a multi-page PDF."
+  },
+  {
+    "slug": "pdf-to-images",
+    "name": "PDF → Images",
+    "category": "Convert",
+    "description": "Export each page as JPEG and download a ZIP."
+  }
+]

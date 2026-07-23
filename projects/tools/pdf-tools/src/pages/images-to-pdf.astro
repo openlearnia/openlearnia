@@ -1,0 +1,27 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import ToolShell from '../components/ToolShell.astro';
+import DropZone from '../components/DropZone.astro';
+---
+<AppLayout
+  title="Images to PDF — Openlearnia PDF Tools"
+  description="Turn images into a multi-page PDF — entirely in your browser."
+  activeSlug="images-to-pdf"
+>
+  <ToolShell title="Images → PDF" description="Each image becomes one page. Reorder before download." slug="images-to-pdf">
+    <DropZone
+      multiple
+      accept="image/jpeg,image/png,image/webp,image/gif,image/bmp,.jpg,.jpeg,.png,.webp,.gif,.bmp"
+      label="Drop images here or click to browse"
+      hint="JPEG, PNG, WebP, GIF, BMP — max 50 MB each, 200 images"
+    />
+    <p class="stats" id="file-hint">Select one or more images</p>
+    <ul class="file-list" id="file-list"></ul>
+    <div class="thumb-grid" id="thumb-grid" hidden></div>
+    <button id="download-btn" data-label="Download images.pdf" disabled>Download images.pdf</button>
+  </ToolShell>
+</AppLayout>
+<script>
+  import { initImagesToPdf } from '../scripts/images-to-pdf';
+  initImagesToPdf();
+</script>

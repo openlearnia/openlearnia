@@ -1,0 +1,9 @@
+---
+interface Props {
+  id?: string;
+}
+
+const { id = 'thumb-grid' } = Astro.props;
+---
+
+<div class="thumb-grid" id={id} hidden></div>

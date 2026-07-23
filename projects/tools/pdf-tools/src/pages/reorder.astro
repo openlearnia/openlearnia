@@ -1,0 +1,22 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import ToolShell from '../components/ToolShell.astro';
+import DropZone from '../components/DropZone.astro';
+import PageThumbGrid from '../components/PageThumbGrid.astro';
+---
+<AppLayout
+  title="Reorder PDF pages — Openlearnia PDF Tools"
+  description="Change page order with thumbnails — entirely in your browser."
+  activeSlug="reorder"
+>
+  <ToolShell title="Reorder pages" description="Use ↑ / ↓ to change page order, then download." slug="reorder">
+    <DropZone label="Drop a PDF here or click to browse" />
+    <p class="stats" id="file-hint">Choose a PDF</p>
+    <PageThumbGrid id="thumb-grid" />
+    <button id="download-btn" data-label="Download reordered.pdf" disabled>Download reordered.pdf</button>
+  </ToolShell>
+</AppLayout>
+<script>
+  import { initReorder } from '../scripts/reorder';
+  initReorder();
+</script>
